@@ -40,7 +40,7 @@ variable "public_subnets"{
 }
 
 module "example_vpc" {
-    source          = ...
+    source          = "github.com/ThunderSSGSS/terraform-vpc"
     vpc_name        = "my-vpc"
     vpc_cidr_block  = "10.0.0.0/16"
     public_subnets  = var.public_subnets
@@ -78,7 +78,7 @@ variable "private_subnets"{
 }
 
 module "example_vpc" {
-    source          = ...
+    source          = "github.com/ThunderSSGSS/terraform-vpc"
     vpc_name        = "my-vpc"
     vpc_cidr_block  = "10.0.0.0/16"
     public_subnets  = var.public_subnets
